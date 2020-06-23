@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+
+    <title>Ankiety &bull; {{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{%static 'polls/style.css'%}">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<nav><a href="{% url 'polls:index'%}">Strona główna</a> </nav>
+
+<h1>{{ title }}</h1>
+
+<main>{%block content %}{% endblock %}</main>
+
+</body>
+</html>
